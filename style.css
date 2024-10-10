@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf'),
+         url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+    /*colors*/
+    --yellow:hsl(47, 88%, 63%);
+    --white:hsl(0, 0%, 100%);
+    --grey-500:hsl(0, 0%, 42%);
+    --grey-950:hsl(0, 0%, 7%);
+    /*fonts*/
+    --font-size: 1rem;
+}
+
+
+body{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+#card{
+    width: 21.875rem;
+    height:29.375rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 8px 8px var(--grey-950);
+    margin-top: 5rem;
+    border: var(--grey-950) solid thin;
+}
+
+#card > img{
+    max-width: 90%;
+    margin: 1.125rem;
+    border-radius: 0.75rem;
+}
+
+#container {
+    width: 75px;
+    height: 26px;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 18px;
+}
+
+#date{
+    margin-left: 18px;
+    margin-top: 12px;
+    color: var(--grey-950);
+    font-size: 0.875rem;
+    text-decoration: solid;
+}
+
+#card > h2{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+h2:hover{
+    color: var(--yellow);
+}
+
+#card  > p{
+    color: var(--grey-500);
+    margin-left: 18px;
+    margin-top: 15px;
+    font-size: var(--font-size);
+}
+
+#profile{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#profile > img{
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 10px;
+}
